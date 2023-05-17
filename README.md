@@ -10,6 +10,9 @@ A Reactive Calculator App developed with Reactjs & Mantine. Features include:
 - Detailed tests included using react testing library and vitest.
 - And lots more.
 
+Get a preview at:
+[reactive-calculator-two.vercel.app](https://reactive-calculator-two.vercel.app/)
+
 ![alt text](https://github.com/realvincentuche/reactive-calculator/blob/b1ce21adae4c7f4bc8c26911a80de06a8bd2af9c/public/reactive-calculator.png)
 
 ## Getting Started
