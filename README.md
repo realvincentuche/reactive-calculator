@@ -8,6 +8,7 @@ A Reactive Calculator App developed with Reactjs & Mantine. Features include:
 - Browser localstorage for saving app states and mode.
 - Blink mode enabled by default.
 - Detailed tests included using react testing library and vitest.
+- Chained operations.
 - And lots more.
 
 Get a preview at:
