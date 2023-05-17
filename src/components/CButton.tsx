@@ -40,6 +40,23 @@ function CButton({ text }: { text: string }) {
       }
     } else return first;
   };
+  const operatorHandler = (theoperator: string | null): void => {
+    if (firstValue !== "0" && secondValue !== "0" && operator !== null) {
+      const secondV = secondValue;
+      updateSecondValue("0");
+      blinkHandler(
+        equalityHandler(
+          parseFloat(firstValue),
+          parseFloat(secondV),
+          operator
+        ).toString()
+      );
+      updateOperator(theoperator);
+    } else {
+      blinkHandler();
+      updateOperator(theoperator);
+    }
+  };
   const clickHandler = () => {
     switch (text) {
       case "1":
@@ -87,20 +104,10 @@ function CButton({ text }: { text: string }) {
         break;
       }
       case "/":
-        blinkHandler();
-        updateOperator("/");
-        break;
       case "*":
-        blinkHandler();
-        updateOperator("*");
-        break;
       case "-":
-        blinkHandler();
-        updateOperator("-");
-        break;
       case "+":
-        blinkHandler();
-        updateOperator("+");
+        operatorHandler(text);
         break;
       case "=": {
         const secondV = secondValue;
